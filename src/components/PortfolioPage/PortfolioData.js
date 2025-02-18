@@ -1,5 +1,11 @@
 export default [
   {
+    name: "E-Commerce Web Application",
+    description: "Digital storefront which showcases product catalogs, processes customer transactions, and provides online marketing.",
+    image: "/ecommerce_web_application.png",
+    link: "https://github.com/RMontepalco/aridoeswtv-shop-website",
+  },
+  {
     name: "2FA Card Reader Using NFC",
     description: "Embedded systems application which digitizes physical building access cards onto a user's smartphone wallet.",
     image: "/2fa-card-reader-using-nfc.png",
