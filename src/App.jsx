@@ -1,18 +1,15 @@
-import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import SplashPage from './components/SplashPage/SplashPage'
 import AboutMePage from './components/AboutMePage/AboutMePage'
 import SkillsPage from './components/SkillsPage/SkillsPage'
 import PortfolioPage from './components/PortfolioPage/PortfolioPage'
-import ContactMePage from './components/ContactMePage/ContactMePage'
+import ContactPage from './components/ContactPage/ContactPage'
 import Footer from './components/Footer/Footer'
+import './App.css'
 
 export default function App() {
   return (
     <div className="app">
-      {/*
-        TO DO: Add scrolling animation to each page
-      */}
       <div id="home">
         <Navbar />
         <SplashPage />
@@ -27,9 +24,9 @@ export default function App() {
         <PortfolioPage />
       </div>
       <div id="contact">
-        <ContactMePage />
-        <Footer />
+        <ContactPage />
       </div>
+      <Footer />
     </div>
   )
 }

@@ -1,37 +1,34 @@
 import './SplashPage.css'
-import envelopeFill from '/envelope-fill.svg'
-import linkedIn from '/linkedin.svg'
-import profilePicture from '/profile-picture.png'
+
+import envelopeFill from '/icons/contact/envelope-fill.svg'
+import gitHub from '/icons/contact/github.svg'
+import linkedIn from '/icons/contact/linkedin.svg'
+import profilePicture from '/images/profile-picture.png'
+
 
 export default function SplashPage() {
   return (
     <div className="splash-page">
-      <div className="summary">
-        <h1>Hey! I'm <span className="highlight">Ross</span></h1>
+      <div className="splash-summary">
+        <h1>Hey! I'm <span className="accent">Ross</span></h1>
         <p>
           I am a software engineer specializing
           in full-stack development to design and
           develop exceptional software solutions.
         </p>
         <div className="splash-buttons">
-          {/*
-            TO DO: Find a safer alternative to mailto
-          */}
           <a href="mailto:montepalco.ross@gmail.com">
-            <div className="button">
-              <img src={envelopeFill}/>
-              <p>&nbsp;&nbsp;Email</p>
-            </div>
+            <img src={envelopeFill}/>
           </a>
-          <a href="https://www.linkedin.com/in/rmontepalco/">
-            <div className="button">
-              <img src={linkedIn}/>
-              <p>&nbsp;&nbsp;LinkedIn</p>
-            </div>
+          <a href="https://www.linkedin.com/in/rmontepalco">
+            <img src={linkedIn}/>
+          </a>
+          <a href="https://github.com/RMontepalco">
+            <img src={gitHub}/>
           </a>
         </div>
       </div>
-      <img className="profile-picture" src={profilePicture} alt="Profile Picture"/>
+      <img className="splash-profile-picture" src={profilePicture} alt="Profile Picture"/>
     </div>
   )
 }

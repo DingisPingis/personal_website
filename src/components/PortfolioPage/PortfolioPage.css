@@ -1,27 +1,32 @@
-/*
-  TO DO: Add svg shapes to background
-*/
-.portfolio-page {
+.portfolio {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 10%;
-  background-color: #27313B;
+  gap: 20px;
+  padding: 0% 10% 0% 10%;
+  background-color: var(--dark-blue);
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 30px;
-  row-gap: 30px;
+.portfolio-projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+@media (width <= 640px) {
+  .portfolio-projects {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (width > 640px) and (width <= 1024px) {
+  .portfolio-projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 828px) {
-  .portfolio-page {
-    padding: 10% 3% 10% 3%;
+  .portfolio {
+    padding: 0% 2.5% 0% 2.5%;
   }
 }

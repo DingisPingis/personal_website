@@ -1,10 +1,12 @@
 import { useId } from 'react'
+
 import './PortfolioPage.css'
+
 import Card from '../Card/Card'
 import portfolioData from './PortfolioData.js'
 
 export default function PortfolioPage() {
-  const project = portfolioData.map(project => {
+  const projects = portfolioData.map(project => {
     return <Card
       key={useId()}
       name={project.name}
@@ -15,10 +17,10 @@ export default function PortfolioPage() {
   })
 
   return (
-    <div className="portfolio-page">
-      <h1>My <span className="highlight">Work</span></h1>
-      <div className="projects">
-        {project}
+    <div className="portfolio">
+      <h2>My <span className="accent">Work</span></h2>
+      <div className="portfolio-projects">
+        {projects}
       </div>
     </div>
   )

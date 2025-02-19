@@ -1,77 +1,75 @@
-/*
-  TO DO: Create variables for color codes and use them across entire website
-  TO DO: Create a nice looking scrollbar
-*/
-* {
-  margin: 0;
-  padding: 0;
-  scrollbar-width: none;
+:root {
+  --white: #FFFFFF;
+  --light-gray: #D9D9D9;
+  --light-yellow:#EFE7BA;
+  --light-blue: #3E4A54;
+  --mid-blue: #2B3742;
+  --dark-blue: #27313B;
+  --deep-blue: #1D252C;
+}
 
+* {
   /* Font "Inter" from https://fonts.google.com/ */
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings: "slnt" 0;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #3E4A54;
+  background-color: var(--dark-blue);
+}
+
+h1, h2, h3, p, a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: var(--white);
+}
+
+p, a {
+  color: var(--light-gray);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #FFFFFF;
 }
 
 h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #FFFFFF;
 }
 
 p {
-  font-size: 1rem;
   font-weight: 500;
-  color: #D9D9D9;
 }
 
 a {
-  font-size: 1.125rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: #D9D9D9;
+  font-weight: 600;
+}
+
+img {
+  aspect-ratio: auto;
+  object-fit: cover;
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 100px;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  border-radius: 15px;
-  padding: 10px 15px 10px 15px;
-  width: 100px;
-  background-color: #27313B;
-  color: #FFFFFF;
-}
-
-.button p {
-  font-weight: 700;
-  color: #FFFFFF;
-}
-
-.highlight {
+.accent {
   font-weight: 800;
-  color: #EFE7BA;
-}
-
-@media (max-width: 828px) {
-  a {
-    font-size: 1.0625rem;
-  }
+  color: var(--light-yellow);
 }

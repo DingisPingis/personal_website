@@ -2,60 +2,63 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: 20px;
   height: 90vh;
   padding: 0% 10% 0% 10%;
-  background-image: url('/layered-waves-haikei.svg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: #3E4A54;
+  background-color: var(--light-blue);
+  background-image: url('/backgrounds/layered-waves-haikei.svg');
 }
 
-.summary {
+.splash-summary {
   display: flex;
   flex-direction: column;
-  align-items: right;
   text-align: right;
-  gap: 30px;
-  max-width: 337px;
+  gap: 20px;
+  max-width: 336px;
 }
 
 .splash-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: right;
-  gap: 10px;
+  gap: 20px;
 }
 
-.profile-picture {
-  aspect-ratio: 1/1;
-  width: 41%;
-  max-width: 300px;
-  max-height: 300px;
-  border: 10px solid #2B3742;
+.splash-buttons a {
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--dark-blue);
+}
+
+.splash-buttons img {
+  width: 25px;
+}
+
+.splash-profile-picture {
+  border: 10px solid var(--mid-blue);
   border-radius: 300px 60px 300px 300px;
-  background-color: #2B3742;
+  max-width: 400px;
+  background-color: var(--mid-blue);
 }
 
 @media (max-width: 828px) {
   .splash-page {
     flex-direction: column-reverse;
     justify-content: flex-end;
-    padding: 0% 3% 0% 3%;
+    padding: 20px 2.5% 0% 2.5%;
   }
 
-  .summary {
-    align-items: center;
+  .splash-summary {
     text-align: center;
   }
 
   .splash-buttons {
     justify-content: center;
-    align-items: center;
   }
 
-  .profile-picture {
-    width: 70%;
-    margin-top: 3%;
+  .splash-profile-picture {
+    width: 80%;
+    max-width: 336px;
   }
 }

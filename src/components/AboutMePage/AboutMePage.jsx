@@ -1,12 +1,13 @@
 import './AboutMePage.css'
-import gradPhoto from '/grad-photo.jpg'
+
+import gradPhoto from '/images/grad-photo.jpg'
 
 export default function AboutMePage() {
   return (
-    <div className="about-me-page">
-      <img className="grad-photo" src={gradPhoto} alt="Grad Photo"/>
+    <div className="about-me">
+      <img className="about-me-grad-photo" src={gradPhoto} alt="Grad Photo"/>
       <div className="about-me-text">
-        <h1>Who I <span className="highlight">Am</span></h1>
+        <h2>Who I <span className="accent">Am</span></h2>
         <p>
           I am a recent graduate from San Jose State University
           with a Bachelors of Science in Software Engineering.

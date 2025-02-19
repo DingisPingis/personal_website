@@ -2,34 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  aspect-ratio: 1/1.125;
-  max-width: 310px;
+  max-width: 350px;
   border-radius: 30px;
-  background-color: #2B3742;
+  background-color: var(--mid-blue);
 }
 
 .card-image {
-  object-fit: cover;
-  width: 100%;
-  aspect-ratio: 1.5/1;
   border-radius: 30px 30px 0px 0px;
+  width: 100%;
+  aspect-ratio: 1.25/1;
 }
 
 .card-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
-  gap: 10px;
-  width: 80%;
-  height: 40%;
-  padding: 10%;
-}
-
-
-@media (max-width: 828px) {
-  .card {
-    width: 100%;
-    aspect-ratio: unset;
-  }
+  gap: 20px;
+  padding: 20px;
+  height: 200px;
 }
