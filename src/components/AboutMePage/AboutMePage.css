@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   padding: 0% 10% 0% 10%;
   background-color: var(--dark-blue);
 }
@@ -15,11 +15,11 @@
 }
 
 .about-me-grad-photo {
+  border: 10px solid var(--mid-blue);
   border-radius: 30px;
   aspect-ratio: 8/9;
   width: 400px;
   max-width: 400px;
-  background-color: #2B3742;
 }
 
 @media (max-width: 828px) {

@@ -2,14 +2,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5%;
   padding: 0% 10% 0% 10%;
   height: 10vh;
   background-color: var(--light-blue);
 }
 
-.navbar p {
-  margin-right: 25%;
+.navbar-background {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  border-radius: 15px;
+  padding: 25px;
+  width: 100%;
+}
+
+.navbar-background p {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-right: auto;
+}
+
+.navbar-background a {
+  color: var(--white);
 }
 
 @media (max-width: 828px) {
@@ -18,7 +33,7 @@
     padding: 0% 2.5% 0% 2.5%;
   }
 
-  .navbar p {
+  .navbar-background p {
     display: none;
   }
 }

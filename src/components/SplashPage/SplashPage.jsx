@@ -3,7 +3,7 @@ import './SplashPage.css'
 import envelopeFill from '/icons/contact/envelope-fill.svg'
 import gitHub from '/icons/contact/github.svg'
 import linkedIn from '/icons/contact/linkedin.svg'
-import profilePicture from '/images/profile-picture.png'
+import profilePicture from '/images/profile-picture.jpg'
 
 
 export default function SplashPage() {

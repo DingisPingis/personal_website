@@ -1,5 +1,6 @@
 .skills {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -27,7 +28,6 @@
 
 @media (max-width: 828px) {
   .skills {
-    flex-direction: column;
     padding: 0% 2.5% 0% 2.5%;
   }
   .skills-section {

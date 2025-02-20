@@ -12,7 +12,7 @@
   text-align: center;
   gap: 20px;
   border-radius: 30px;
-  padding: 5%;
+  padding: 2.5%;
   max-width: 650px;
   background-color: var(--mid-blue);
 }
@@ -27,7 +27,7 @@
   display: flex;
   border-radius: 10px;
   padding: 10px;
-  background-color: var(--dark-blue);
+  background-color: var(--deep-blue);
 }
 
 .contact-buttons img {
